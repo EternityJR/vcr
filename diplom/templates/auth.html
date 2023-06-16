@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    {% load static %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <title>Главная</title>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="border-bottom-style: solid;border-bottom-color: #dfe5fb;border-bottom-width: 1px;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000">ГЛАВНАЯ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/tasks">ЗАДАЧИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/theory">ТЕОРИЯ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/manual">ИНСТРУКЦИИ INTEL</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" aria-label="Search">
+                <button class="btn btn-primary" type="submit" style="background-color: #5877ff;">Найти</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<main class="d-flex flex-nowrap flex-grow-1">
+
+    </div>
+
+
+    <div class="container-fluid container"
+         style="max-width: 50%;display: flex;align-items: center; text-align: center;">
+        <div class="modal-body p-5 pt-0">
+            <form class="">
+                <h2 class="fs-5 fw-bold mb-3">Вход в систему</h2>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-3" id="floatingInput"
+                           placeholder="name@example.com">
+                    <label for="floatingInput">E-mail</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Пароль</label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit"
+                        style="background-color: #5877ff;">Войти
+                </button>
+                <br> <br>
+                <hr class="my-4">
+                <h2 class="fs-5 fw-bold mb-3">Ещё не зарегистрированы в системе?</h2>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                        <use xlink:href="http://127.0.0.1:8000/reg"/>
+                    </svg>
+                    Создать аккаунт
+                </button>
+            </form>
+        </div>
+
+    </div>
+</main>
+
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="sidebars.js"></script>
+
+
+</body>
+</html>
